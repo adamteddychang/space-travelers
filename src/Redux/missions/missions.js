@@ -1,6 +1,6 @@
 import * as apiCalls from '../../Api/missionsApi';
 
-const FetchMissions = 'missionStore/missionactions/fetchMissions';
+const FETCH_MISSIONS = 'missionStore/missionactions/fetchMissions';
 
 const initialMissionState = [{
   mission_id: '',
@@ -13,14 +13,14 @@ export const fetchAllMissions = () => async (dispatch) => {
   const apiData = await apiCalls.fetchMissionsApi();
   const payload = Object.values(apiData).map((i) => i);
   dispatch({
-    type: FetchMissions,
+    type: FETCH_MISSIONS,
     payload,
   });
 };
 
 const missionsReducer = (state = initialMissionState, action) => {
   switch (action.type) {
-    case FetchMissions:
+    case FETCH_MISSIONS:
       return action.payload;
     default:
       return state;
