@@ -1,5 +1,4 @@
-// disable-eslint
-
+const FETCH_ROCKETS = 'rocketStore/rocketactions/FETCH_ROCKETS';
 const initialRocketState = [{
   id: '',
   rocket_name: '',
