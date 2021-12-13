@@ -1,3 +1,5 @@
+import apiCalls from '../../Api/missionsApi'
+const FetchMissions = 'missionStore/missionactions/fetchMissions';
 
 
 const initialMissionState = [{
@@ -7,6 +9,22 @@ const initialMissionState = [{
   joined: false,
 }];
 
-const missionsReducer = (state = initialMissionState, action) => ([state, action.payload]);
+export const fetchAllMissions = () => async (dispatch) => {
+  const apiData = await apiCalls.fetchMissionsApi();
+  const payload = Object.values(apiData).map((i)=>i);
+  dispatch({
+    type:FetchMissions,
+    payload,
+  })
+}
+
+const missionsReducer = (state = initialMissionState, action) => {
+  switch (action.type) {
+    case FetchMissions:
+      return action.payload;
+      default:
+        return state;
+  }
+}
 
 export default { missionsReducer };
