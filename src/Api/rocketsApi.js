@@ -5,3 +5,5 @@ export const fetchRocketsApi = async () => {
   const rockets = await req.json();
   return rockets;
 };
+
+export default { fetchRocketsApi };
