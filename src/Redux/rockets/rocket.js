@@ -1,3 +1,5 @@
+import * as apiCalls from '../../Api/rocketsApi';
+
 const FETCH_ROCKETS = 'rocketStore/rocketactions/FETCH_ROCKETS';
 const initialRocketState = [{
   id: '',
@@ -16,6 +18,13 @@ export const fetchAllRockets = () => async (dispatch) => {
   });
 };
 
-const rocketsReducer = (state = initialRocketState, action) => ([state, action.payload]);
+const rocketsReducer = (state = initialRocketState, action) => {
+  switch (action.type) {
+    case FETCH_ROCKETS:
+      return action.payload;
+    default:
+      return state;
+  }
+};
 
 export default { rocketsReducer };
