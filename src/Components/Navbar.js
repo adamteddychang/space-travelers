@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import planet from '../planet.png';
 
 function Navbar() {
@@ -9,9 +9,9 @@ function Navbar() {
         <h1 className="header-name">Space Travelers&apos Hub</h1>
       </div>
       <div className="right-nav">
-        <Link to="/">Rockets</Link>
-        <Link to="/missions">Missions</Link>
-        <Link to="/myprofile">My Profile</Link>
+        <NavLink to="/" activeClassName="actived-navlink" exact>Rockets</NavLink>
+        <NavLink to="/missions" activeClassName="actived-navlink">Missions</NavLink>
+        <NavLink to="/myprofile" activeClassName="actived-navlink">My Profile</NavLink>
       </div>
     </div>
   );

@@ -25,4 +25,9 @@
 
 .right-nav > * {
   margin-right: 30px;
+  text-decoration: none;
+}
+
+.actived-navlink {
+  text-decoration: underline;
 }
