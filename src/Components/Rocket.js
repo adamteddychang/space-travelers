@@ -4,6 +4,7 @@ import { bookRocket } from "../Redux/rockets/rocket";
 
 function Rocket({ rocket }) {
   const dispatch = useDispatch();
+  console.log(rocket.reserved);
   const bookIURocket = () => {
     dispatch(bookRocket(rocket.id));
   }

@@ -1,7 +1,7 @@
 import * as apiCalls from '../../Api/rocketsApi';
 
 const FETCH_ROCKETS = 'rocketStore/rockets/FETCH_ROCKETS';
-const BOOK_ROCKET = 'rocketStore/rockets/RESERVE_ROCKETS';
+const BOOK_ROCKET = 'rocketStore/rockets/BOOK_ROCKET';
 const initialRocketState = [{
   id: '',
   rocket_name: '',
@@ -29,8 +29,10 @@ const rocketsReducer = (state = initialRocketState, action) => {
     case FETCH_ROCKETS:
       return action.payload;
     case BOOK_ROCKET:
-      if (rocket.id !== action.id) return rocket;
-      return { ...rocket, reserved: false };
+      return state.map((rocket) => {
+        if (rocket.id !== action.id) return rocket;
+        return { ...rocket, reserved: true };
+      });
     default:
       return state;
   }
