@@ -1,6 +1,6 @@
 import * as apiCalls from '../../Api/missionsApi';
 
-const FETCH_MISSIONS = 'missionStore/missionactions/fetchMissions';
+const FETCH_MISSIONS = 'missionStore/missions/fetchMissions';
 
 const initialMissionState = [{
   mission_id: '',
@@ -27,4 +27,4 @@ const missionsReducer = (state = initialMissionState, action) => {
   }
 };
 
-export default { missionsReducer };
+export default  missionsReducer ;
