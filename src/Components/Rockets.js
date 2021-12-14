@@ -1,9 +1,25 @@
-function Missions() {
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchAllRockets } from '../Redux/rockets/rocket';
+import Rocket from './Rocket';
+
+function Rockets() {
+  const dispatch = useDispatch();
+  const rockets = useSelector((state) => state.rockets);
+  useEffect(() => { dispatch(fetchAllRockets()); }, [dispatch]);
   return (
-    <div className="rockets">
+    <div className="Rockets">
       <h2>Under Construction Rockets</h2>
+      <ul>
+        {rockets.map((rocket) => (
+          <Rocket
+            key={rocket.id}
+            rocket={rocket}
+          />
+        ))}
+      </ul>
     </div>
   );
 }
 
-export default Missions;
+export default Rockets;
