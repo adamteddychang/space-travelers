@@ -4,8 +4,10 @@ import rocketsReducer from './rockets/rocket';
 import missionsReducer from './missions/missions';
 
 const reducer = combineReducers({
+
   rockets: rocketsReducer,
-  missionsReducer,
+  missions: missionsReducer,
+
 });
 
 const store = createStore(
