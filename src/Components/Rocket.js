@@ -1,12 +1,15 @@
 /* eslint-disable */
 import { useDispatch } from "react-redux";
-import { bookRocket } from "../Redux/rockets/rocket";
+import { bookRocket, cancelRocket } from "../Redux/rockets/rocket";
 
 function Rocket({ rocket }) {
   const dispatch = useDispatch();
   console.log(rocket.reserved);
   const bookIURocket = () => {
     dispatch(bookRocket(rocket.id));
+  }
+  const cancelUIROCket = (id) => {
+    dispatch(cancelRocket(rocket.id));
   }
   return (
     <li className="rocket-item" key={rocket.id}>
@@ -19,7 +22,7 @@ function Rocket({ rocket }) {
         <div>
           {rocket.reserved === false || rocket.reserved === undefined ?
           <button type="button" className="available-button" onClick={bookIURocket}>Reserve Rocket</button> :
-          <button type="button" className="reserved-button">Cancel Reservation</button>
+          <button type="button" className="reserved-button" onClick={cancelUIROCket}>Cancel Reservation</button>
           }
         </div>
       </div>
