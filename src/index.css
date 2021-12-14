@@ -30,3 +30,7 @@
 .actived-navlink {
   text-decoration: underline;
 }
+
+.success-rocket {
+  background-color: green;
+}

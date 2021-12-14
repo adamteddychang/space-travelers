@@ -4,7 +4,6 @@ import { bookRocket, cancelRocket } from "../Redux/rockets/rocket";
 
 function Rocket({ rocket }) {
   const dispatch = useDispatch();
-  console.log(rocket.reserved);
   const bookIURocket = () => {
     dispatch(bookRocket(rocket.id));
   }
@@ -17,6 +16,7 @@ function Rocket({ rocket }) {
       <div className="rocket-description">
         <h2>{rocket.rocket_name}</h2>
         <p>
+        {rocket.reserved && (<span className="success-rocket">Reserved</span>)}
         {rocket.description}
         </p>
         <div>
