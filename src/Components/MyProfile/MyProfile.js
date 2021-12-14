@@ -1,9 +1,10 @@
 import React from 'react';
+import MyMissions from './missionProfile';
 
 function MyProfile() {
   return (
     <div>
-      <h2>Under Construction My Profile</h2>
+      <MyMissions />
     </div>
   );
 }
