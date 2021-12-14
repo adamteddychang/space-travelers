@@ -1,6 +1,7 @@
 import * as apiCalls from '../../Api/rocketsApi';
 
 const FETCH_ROCKETS = 'rocketStore/rockets/FETCH_ROCKETS';
+const BOOK_ROCKET = 'rocketStore/rockets/RESERVE_ROCKETS';
 const initialRocketState = [{
   id: '',
   rocket_name: '',
@@ -17,6 +18,11 @@ export const fetchAllRockets = () => async (dispatch) => {
     payload,
   });
 };
+
+export const bookRocket = (id) => ({
+  type: BOOK_ROCKET,
+  id,
+})
 
 const rocketsReducer = (state = initialRocketState, action) => {
   switch (action.type) {
