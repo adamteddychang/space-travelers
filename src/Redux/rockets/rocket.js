@@ -22,12 +22,15 @@ export const fetchAllRockets = () => async (dispatch) => {
 export const bookRocket = (id) => ({
   type: BOOK_ROCKET,
   id,
-})
+});
 
 const rocketsReducer = (state = initialRocketState, action) => {
   switch (action.type) {
     case FETCH_ROCKETS:
       return action.payload;
+    case BOOK_ROCKET:
+      if (rocket.id !== action.id) return rocket;
+      return { ...rocket, reserved: false };
     default:
       return state;
   }
