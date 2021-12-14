@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { joinMission, leaveMission } from '../Redux/missions/missions';
 
+
 function Mission(props) {
   const { mission } = props;
   const dispatch = useDispatch();
