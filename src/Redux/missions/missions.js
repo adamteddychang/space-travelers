@@ -1,5 +1,4 @@
 import * as apiCalls from '../../Api/missionsApi';
-import rocketsApi from '../../Api/rocketsApi';
 
 const FETCH_MISSIONS = 'missionStore/missions/fetchMissions';
 const JOIN_MISSION = 'missionStore/missions/JOIN_MISSION';
@@ -26,7 +25,7 @@ export const joinMission = (missionId) => ({
   missionId,
 });
 
-export const leaveMission = (missionId) =>({
+export const leaveMission = (missionId) => ({
   type: LEAVE_MISSION,
   missionId,
 });
@@ -45,13 +44,13 @@ const missionsReducer = (state = initialMissionState, action) => {
       });
 
     case LEAVE_MISSION:
-      return state.map((mission)=>{
-        if(mission.mission_id !== action.missionId) {
+      return state.map((mission) => {
+        if (mission.mission_id !== action.missionId) {
           return mission;
         }
-        return { ...mission, joined: false}
-      });   
-    
+        return { ...mission, joined: false };
+      });
+
     default:
       return state;
   }

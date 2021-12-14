@@ -10,19 +10,19 @@ function Mission(props) {
     dispatch(joinMission(mission.mission_id));
   };
 
-  const leaveTheMission = () =>{
-    dispatch(leaveMission(mission.mission_id))
-  }
-
+  const leaveTheMission = () => {
+    dispatch(leaveMission(mission.mission_id));
+  };
 
   return (
     <tr key={mission.mission_id}>
 
       <td>{mission.mission_name}</td>
       <td>{mission.description}</td>
-      <td>{mission.joined === false || mission.joined === undefined
-            ? <span className="available" >Available</span>
-            : <span className='Joined'>Joined</span>}
+      <td>
+        {mission.joined === false || mission.joined === undefined
+          ? <span className="available">Available</span>
+          : <span className="Joined">Joined</span>}
       </td>
       <td>
         <div>
