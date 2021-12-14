@@ -20,8 +20,10 @@ function Mission(props) {
 
       <td>{mission.mission_name}</td>
       <td>{mission.description}</td>
-      <td>Active</td>
-
+      <td>{mission.joined === false || mission.joined === undefined
+            ? <span className="available" >Available</span>
+            : <span className='Joined'>Joined</span>}
+      </td>
       <td>
         <div>
           {mission.joined === false || mission.joined === undefined
