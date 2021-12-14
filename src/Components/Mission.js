@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 function Mission(props) {
   const { mission } = props;
   return (
