@@ -6,7 +6,11 @@ import Mission from './Mission';
 function Missions() {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions);
-  useEffect(() => { dispatch(fetchAllMissions()); }, [dispatch]);
+  useEffect(() => {
+    if (missions.length === 1) {
+      dispatch(fetchAllMissions());
+    }
+  }, [dispatch]);
   return (
     <div className="missions">
       <table>

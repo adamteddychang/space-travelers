@@ -6,7 +6,12 @@ import Rocket from './Rocket';
 function Rockets() {
   const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rockets);
-  useEffect(() => { dispatch(fetchAllRockets()); }, [dispatch]);
+  console.log(rockets.length);
+  useEffect(() => {
+    if (rockets.length === 1) {
+      dispatch(fetchAllRockets());
+    }
+  }, [dispatch]);
   return (
     <div className="Rockets">
       <h2>Under Construction Rockets</h2>
