@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { joinMission } from '../Redux/missions/missions';
+import { joinMission, leaveMission } from '../Redux/missions/missions';
 
 function Mission(props) {
   const { mission } = props;
@@ -9,6 +9,12 @@ function Mission(props) {
   const joinTheMission = () => {
     dispatch(joinMission(mission.mission_id));
   };
+
+  const leaveTheMission = () =>{
+    dispatch(leaveMission(mission.mission_id))
+  }
+
+
   return (
     <tr key={mission.mission_id}>
 
@@ -20,7 +26,7 @@ function Mission(props) {
         <div>
           {mission.joined === false || mission.joined === undefined
             ? <button type="button" className="Join" onClick={joinTheMission}>Join</button>
-            : <button type="button" className="Leave">Leave</button>}
+            : <button type="button" className="Leave" onClick={leaveTheMission}>Leave</button>}
         </div>
       </td>
     </tr>

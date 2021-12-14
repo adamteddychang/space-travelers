@@ -22,8 +22,7 @@
     "max-len": "off",
     "no-param-reassign":"off",
     "no-use-before-define":"off",
-    "react/prop-types": "off",
-    "camelcase":"off"
+    "react/prop-types": "off"
     
   },
   "ignorePatterns": [
