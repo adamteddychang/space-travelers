@@ -5,7 +5,7 @@ import App from './App';
 
 test('renders learn react link', () => {
   const { getByText } = render(
-    <Provider >
+    <Provider>
       <App />
     </Provider>,
   );

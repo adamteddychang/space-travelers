@@ -3,11 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchAllMissions } from '../Redux/missions/missions';
 import Mission from './Mission';
 
-
-
-
-
-
 function Missions() {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions);
@@ -15,20 +10,20 @@ function Missions() {
   return (
     <div className="missions">
       <table>
-      <thead>
-        <tr>
-          <td>Mission</td>
-          <td>Description</td>
-          <td>Status</td>
-          <td>Are you Joined</td>
-        </tr>
-      </thead>
-      <tbody>
-        {
+        <thead>
+          <tr>
+            <td>Mission</td>
+            <td>Description</td>
+            <td>Status</td>
+            <td>Are you Joined</td>
+          </tr>
+        </thead>
+        <tbody>
+          {
           missions.map((mission) => (<Mission key={mission.mission_id} mission={mission} />))
         }
-      </tbody>
-    </table>
+        </tbody>
+      </table>
     </div>
   );
 }
