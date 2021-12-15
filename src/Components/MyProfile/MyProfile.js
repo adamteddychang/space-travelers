@@ -4,7 +4,7 @@ import Myrocket from './Myrocket';
 
 function MyProfile() {
   return (
-    <div>
+    <div className="Profile-main">
       <MyMissions />
       <Myrocket />
     </div>
