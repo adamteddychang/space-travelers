@@ -3,33 +3,7 @@
   box-sizing: border-box;
 }
 
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-}
 
-.left-nav {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  width: 10%;
-}
-
-.right-nav {
-  display: flex;
-  align-items: center;
-}
-
-.right-nav > * {
-  margin-right: 30px;
-  text-decoration: none;
-}
-
-.actived-navlink {
-  text-decoration: underline;
-}
 
 .success-rocket {
   background-color: green;
