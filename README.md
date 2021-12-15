@@ -1,44 +1,92 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Available Scripts
+# Space Travelers Hub
 
-In the project directory, you can run:
+> This project is for space rockets and missions. You can see available rockets and missions to reserve or join. The project built by using JavaScript, React, Redux,
+Kanban Boards, CSS.
 
-### `npm start`
+![screenshot](./app_screenshot.png)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Live Demo
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+[Live](https://spacetravellers.netlify.app/)
 
-### `npm test`
+## Built With
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- HTML&CSS, JavaScript
+- React, Redux
+- NPM
+- React and Redux Web Dev Tools
+- Pair-programming
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To get a local copy up and running follow these simple example steps.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Clone the project by using terminal:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+git clone https://github.com/adamteddychang/space-travelers.git
+```
 
-### `npm run eject`
+cd into the directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+cd space-travelers
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+install node modules:
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+start live server:
 
-## Learn More
+```
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+for testing:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm run test
+```
+
+### Prerequisites
+
+- Node.
+- Code Editor.
+- Web Browser.
+
+- Web Browser.
+
+## Authors
+
+👤 **You-Wei (Adam) Chang** 
+- GitHub: [@adamteddychang](https://github.com/adamteddychang)
+- Twitter: [@AdamChang3](https://twitter.com/AdamChang3) 
+
+👤 **Orçun Uğur**
+
+- GitHub: [@githubhandle](https://github.com/luftedar)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/orcunugur)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- This project built in Microverse's second module's fourth week.
+- SpaceX API.
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
