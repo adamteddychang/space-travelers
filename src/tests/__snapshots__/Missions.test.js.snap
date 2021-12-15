@@ -4,48 +4,64 @@ exports[`Mission Component test Renders Mission Row 1`] = `
 <div
   className="missions"
 >
-  <table>
+  <table
+    className="miss-table"
+  >
     <thead>
       <tr>
-        <td>
+        <td
+          className=" col-head"
+        >
           Mission
         </td>
-        <td>
+        <td
+          className=" col-head"
+        >
           Description
         </td>
-        <td>
+        <td
+          className=" col-head"
+        >
           Status
         </td>
-        <td>
-          Are you Joined
+        <td
+          className=" col-head"
+        >
+          Join
         </td>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>
+        <td
+          className="first-col"
+        >
           
         </td>
-        <td>
+        <td
+          className="second-col"
+        >
           
         </td>
-        <td>
+        <td
+          className="third-col"
+        >
           <span
             className="available"
           >
             Available
           </span>
         </td>
-        <td>
-          <div>
-            <button
-              className="Join"
-              onClick={[Function]}
-              type="button"
-            >
-              Join
-            </button>
-          </div>
+        <td
+          className="fourth-col"
+        >
+          <button
+            className="Join"
+            onClick={[Function]}
+            type="button"
+          >
+            Join
+          </button>
         </td>
       </tr>
     </tbody>

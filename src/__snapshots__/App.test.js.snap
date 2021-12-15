@@ -2,7 +2,7 @@
 
 exports[`App Renders test Renders App 1`] = `
 Array [
-  <div
+  <nav
     className="nav-bar"
   >
     <div
@@ -46,7 +46,7 @@ Array [
         My Profile
       </a>
     </div>
-  </div>,
+  </nav>,
   <div
     className="Rockets"
   >

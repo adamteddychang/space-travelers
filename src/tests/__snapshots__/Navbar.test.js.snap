@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Navbar Component Test Renders NavBar 1`] = `
-<div
+<nav
   className="nav-bar"
 >
   <div
@@ -45,5 +45,5 @@ exports[`Navbar Component Test Renders NavBar 1`] = `
       My Profile
     </a>
   </div>
-</div>
+</nav>
 `;
