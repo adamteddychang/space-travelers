@@ -1,0 +1,46 @@
+.Rockets {
+  margin: 50px auto;
+}
+
+.rocket-item {
+  display: flex;
+  list-style: none;
+}
+
+.rocket-item img {
+  width: 150px;
+  height: 150px;
+}
+
+.rocket-description {
+  margin-left: 20px;
+}
+
+.rocket-description p {
+  line-height: 1.5;
+}
+
+.available-button {
+  color: white;
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.rocket-description > * {
+  margin-bottom: 10px;
+}
+
+.success-rocket {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.reserved-button {
+  color: red;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
