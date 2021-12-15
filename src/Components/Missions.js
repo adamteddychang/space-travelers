@@ -13,13 +13,13 @@ function Missions() {
   }, [dispatch]);
   return (
     <div className="missions">
-      <table>
+      <table className="miss-table">
         <thead>
           <tr>
-            <td>Mission</td>
-            <td>Description</td>
-            <td>Status</td>
-            <td>Are you Joined</td>
+            <td className=" col-head">Mission</td>
+            <td className=" col-head">Description</td>
+            <td className=" col-head">Status</td>
+            <td className=" col-head">Join</td>
           </tr>
         </thead>
         <tbody>

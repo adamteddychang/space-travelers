@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar';
 import Missions from './Components/Missions';
 import MyProfile from './Components/MyProfile/MyProfile';
 import Rockets from './Components/Rockets';
+import './Components/Mission.css';
 
 function App() {
   return (

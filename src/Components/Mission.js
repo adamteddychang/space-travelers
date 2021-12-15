@@ -18,19 +18,19 @@ function Mission(props) {
   return (
     <tr key={mission.mission_id}>
 
-      <td>{mission.mission_name}</td>
-      <td>{mission.description}</td>
-      <td>
+      <td className="first-col">{mission.mission_name}</td>
+      <td className="second-col">{mission.description}</td>
+      <td className="third-col">
         {mission.joined === false || mission.joined === undefined
           ? <span className="available">Available</span>
           : <span className="Joined">Joined</span>}
       </td>
-      <td>
-        <div>
+      <td className="fourth-col">
+        
           {mission.joined === false || mission.joined === undefined
             ? <button type="button" className="Join" onClick={joinTheMission}>Join</button>
             : <button type="button" className="Leave" onClick={leaveTheMission}>Leave</button>}
-        </div>
+        
       </td>
     </tr>
   );
