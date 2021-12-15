@@ -10,7 +10,6 @@ function Rocket({ rocket }) {
   const cancelUIROCket = () => {
     dispatch(cancelRocket(rocket.id));
   }
-  console.log(`Rocket ID:${rocket.id}--- RESERVED: ${rocket.reserved}`)
   return (
     <li className="rocket-item" key={rocket.id}>
       <div className="rocket-img"><img src={rocket.flickr_images} alt={rocket.name} /></div>
