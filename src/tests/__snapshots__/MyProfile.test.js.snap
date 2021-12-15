@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyProfile Component test Renders MyProfile 1`] = `
+<div
+  className="Profile-main"
+>
+  <div
+    className="My-Missions"
+  >
+    <h2>
+      My Missions
+    </h2>
+    <ul
+      className="ul-contain-miss"
+    >
+      <li>
+        No Missions Joined
+      </li>
+    </ul>
+  </div>
+  <div
+    className="My-Rockets"
+  >
+    <h2>
+      My Rockets
+    </h2>
+    <ul
+      className="ul-contain-miss"
+    >
+      <li>
+        No Rockets Reserved
+      </li>
+    </ul>
+  </div>
+</div>
+`;

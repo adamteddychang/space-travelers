@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rockets Component test Renders Rocket Page 1`] = `
+<div
+  className="Rockets"
+>
+  <ul>
+    <li
+      className="rocket-item"
+    >
+      <div
+        className="rocket-img"
+      >
+        <img />
+      </div>
+      <div
+        className="rocket-description"
+      >
+        <h2>
+          
+        </h2>
+        <p>
+          
+        </p>
+        <div>
+          <button
+            className="available-button"
+            onClick={[Function]}
+            type="button"
+          >
+            Reserve Rocket
+          </button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

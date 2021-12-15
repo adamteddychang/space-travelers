@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mission Component test Renders Mission Row 1`] = `
+<div
+  className="missions"
+>
+  <table
+    className="miss-table"
+  >
+    <thead>
+      <tr>
+        <td
+          className=" col-head"
+        >
+          Mission
+        </td>
+        <td
+          className=" col-head"
+        >
+          Description
+        </td>
+        <td
+          className=" col-head"
+        >
+          Status
+        </td>
+        <td
+          className=" col-head"
+        >
+          Join
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          className="first-col"
+        >
+          
+        </td>
+        <td
+          className="second-col"
+        >
+          
+        </td>
+        <td
+          className="third-col"
+        >
+          <span
+            className="available"
+          >
+            Available
+          </span>
+        </td>
+        <td
+          className="fourth-col"
+        >
+          <button
+            className="Join"
+            onClick={[Function]}
+            type="button"
+          >
+            Join
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
