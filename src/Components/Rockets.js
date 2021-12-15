@@ -13,7 +13,6 @@ function Rockets() {
   }, [dispatch]);
   return (
     <div className="Rockets">
-      <h2>Under Construction Rockets</h2>
       <ul>
         {rockets.map((rocket) => (
           <Rocket
