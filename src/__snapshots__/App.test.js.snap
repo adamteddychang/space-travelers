@@ -16,7 +16,7 @@ Array [
       <h1
         className="header-name"
       >
-        Space Travelers&apos Hub
+        Space Traveler's Hub
       </h1>
     </div>
     <div
@@ -52,9 +52,6 @@ Array [
   <div
     className="Rockets"
   >
-    <h2>
-      Under Construction Rockets
-    </h2>
     <ul>
       <li
         className="rocket-item"

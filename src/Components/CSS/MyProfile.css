@@ -5,18 +5,20 @@ html {
 .Profile-main {
   display: flex;
   width: 90%;
-  margin: 0 auto;
+  margin: 1rem auto;
   justify-content: space-around;
 
   /* border: 1px solid black; */
 }
 
-.My-Missions {
+.My-Missions,
+.My-Rockets {
   /* border: 1px solid black; */
   padding: 0 4rem 4rem;
 }
 
-.My-Missions h2 {
+.My-Missions h2,
+.My-Rockets h2 {
   margin: 1rem;
   font-size: 40px;
   font-weight: 600;

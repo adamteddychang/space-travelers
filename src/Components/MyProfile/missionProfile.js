@@ -10,7 +10,7 @@ const MyMissions = () => {
         (myMissions.length === 0)
           ? (
             <ul className="ul-contain-miss">
-              <li>Empty</li>
+              <li>No Missions Joined</li>
             </ul>
           )
           : (

@@ -8,9 +8,13 @@ const Myrocket = () => {
       <h2>My Rockets</h2>
       {
         (myRockets.length === 0)
-          ? <p>Empty</p>
+          ? (
+            <ul className="ul-contain-miss">
+              <li>No Rockets Reserved</li>
+            </ul>
+          )
           : (
-            <ul>
+            <ul className="ul-contain-miss">
               {
                 myRockets.map((rocket) => (
                   <li key={rocket.rocket_id}>

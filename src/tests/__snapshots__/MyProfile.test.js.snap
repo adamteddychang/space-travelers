@@ -14,7 +14,7 @@ exports[`MyProfile Component test Renders MyProfile 1`] = `
       className="ul-contain-miss"
     >
       <li>
-        Empty
+        No Missions Joined
       </li>
     </ul>
   </div>
@@ -24,9 +24,13 @@ exports[`MyProfile Component test Renders MyProfile 1`] = `
     <h2>
       My Rockets
     </h2>
-    <p>
-      Empty
-    </p>
+    <ul
+      className="ul-contain-miss"
+    >
+      <li>
+        No Rockets Reserved
+      </li>
+    </ul>
   </div>
 </div>
 `;

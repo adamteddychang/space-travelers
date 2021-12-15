@@ -1,23 +1,38 @@
 .Rockets {
   margin: 50px auto;
+  padding: 1rem 3rem;
+}
+
+ul {
+  padding: 0;
 }
 
 .rocket-item {
   display: flex;
   list-style: none;
+  margin-top: 2rem;
 }
 
 .rocket-item img {
-  width: 150px;
-  height: 150px;
+  width: 15rem;
+  height: 15rem;
 }
 
 .rocket-description {
   margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+}
+
+.rocket-description h2 {
+  font-size: 40px;
 }
 
 .rocket-description p {
-  line-height: 1.5;
+  line-height: 2;
+  font-size: 20px;
 }
 
 .available-button {

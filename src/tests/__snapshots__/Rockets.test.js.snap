@@ -4,9 +4,6 @@ exports[`Rockets Component test Renders Rocket Page 1`] = `
 <div
   className="Rockets"
 >
-  <h2>
-    Under Construction Rockets
-  </h2>
   <ul>
     <li
       className="rocket-item"

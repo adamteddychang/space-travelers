@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="nav-bar">
       <div className="left-nav">
         <img className="logo" src={planet} alt="logo" />
-        <h1 className="header-name">Space Travelers&apos Hub</h1>
+        <h1 className="header-name">Space Traveler&apos;s Hub</h1>
       </div>
       <div className="right-nav">
         <NavLink to="/" activeClassName="actived-navlink" className="nav-links" exact>Rockets</NavLink>

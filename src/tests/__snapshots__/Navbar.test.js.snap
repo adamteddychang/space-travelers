@@ -15,7 +15,7 @@ exports[`Navbar Component Test Renders NavBar 1`] = `
     <h1
       className="header-name"
     >
-      Space Travelers&apos Hub
+      Space Traveler's Hub
     </h1>
   </div>
   <div
