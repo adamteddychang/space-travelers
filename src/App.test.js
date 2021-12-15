@@ -1,16 +1,18 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
+import store from './Redux/configureStore';
 import App from './App';
 
-test('renders learn react link', () => {
-  const { getByText } = render(
+const APP = (
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
 
-    <Provider>
-
-      <App />
-    </Provider>,
-  );
-
-  expect(getByText(/learn/i)).toBeInTheDocument();
+describe('App Renders test', () => {
+  it('Renders App', () => {
+    const app = renderer.create(APP).toJSON();
+    expect(app).toMatchSnapshot();
+  });
 });
