@@ -4,13 +4,17 @@ import { useSelector } from 'react-redux';
 const MyMissions = () => {
   const myMissions = useSelector((state) => state.missions.filter((mission) => mission.joined));
   return (
-    <div>
+    <div className="My-Missions">
       <h2>My Missions</h2>
       {
         (myMissions.length === 0)
-          ? <p>Empty</p>
+          ? (
+            <ul className="ul-contain-miss">
+              <li>Empty</li>
+            </ul>
+          )
           : (
-            <ul>
+            <ul className="ul-contain-miss">
               {
                 myMissions.map((mission) => (
                   <li key={mission.mission_id}>

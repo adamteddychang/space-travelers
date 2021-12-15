@@ -2,7 +2,7 @@
 
 exports[`App Renders test Renders App 1`] = `
 Array [
-  <div
+  <nav
     className="nav-bar"
   >
     <div
@@ -24,7 +24,7 @@ Array [
     >
       <a
         aria-current="page"
-        className="actived-navlink"
+        className="nav-links actived-navlink"
         href="/"
         onClick={[Function]}
         style={Object {}}
@@ -33,6 +33,7 @@ Array [
       </a>
       <a
         aria-current={null}
+        className="nav-links"
         href="/missions"
         onClick={[Function]}
       >
@@ -40,13 +41,14 @@ Array [
       </a>
       <a
         aria-current={null}
+        className="nav-links"
         href="/myprofile"
         onClick={[Function]}
       >
         My Profile
       </a>
     </div>
-  </div>,
+  </nav>,
   <div
     className="Rockets"
   >

@@ -4,8 +4,8 @@ import { useSelector } from 'react-redux';
 const Myrocket = () => {
   const myRockets = useSelector((state) => state.rockets.filter((rocket) => rocket.reserved));
   return (
-    <div>
-      <h2>My Missions</h2>
+    <div className="My-Rockets">
+      <h2>My Rockets</h2>
       {
         (myRockets.length === 0)
           ? <p>Empty</p>
