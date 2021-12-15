@@ -1,18 +1,17 @@
-import React from "react";
+import React from 'react';
 import renderer from 'react-test-renderer';
-import { Provider } from "react-redux";
-import  store  from "../Redux/configureStore";
-import Rockets from "../Components/Rockets"
+import { Provider } from 'react-redux';
+import store from '../Redux/configureStore';
+import Rockets from '../Components/Rockets';
 
-
-describe('Rockets Component test', ()=>{
-  it ("Renders Rocket Page",()=>{
+describe('Rockets Component test', () => {
+  it('Renders Rocket Page', () => {
     const app = renderer.create(
       <Provider store={store}>
         <Rockets />
 
-      </Provider>
+      </Provider>,
     ).toJSON();
     expect(app).toMatchSnapshot();
-  })
-})
+  });
+});
