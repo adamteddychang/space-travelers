@@ -6,7 +6,6 @@ import Rocket from './Rocket';
 function Rockets() {
   const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rockets);
-  console.log(rockets.length);
   useEffect(() => {
     if (rockets.length === 1) {
       dispatch(fetchAllRockets());
