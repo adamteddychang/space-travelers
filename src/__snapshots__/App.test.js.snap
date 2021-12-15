@@ -24,7 +24,7 @@ Array [
     >
       <a
         aria-current="page"
-        className="actived-navlink"
+        className="nav-links actived-navlink"
         href="/"
         onClick={[Function]}
         style={Object {}}
@@ -33,6 +33,7 @@ Array [
       </a>
       <a
         aria-current={null}
+        className="nav-links"
         href="/missions"
         onClick={[Function]}
       >
@@ -40,6 +41,7 @@ Array [
       </a>
       <a
         aria-current={null}
+        className="nav-links"
         href="/myprofile"
         onClick={[Function]}
       >

@@ -23,7 +23,7 @@ exports[`Navbar Component Test Renders NavBar 1`] = `
   >
     <a
       aria-current="page"
-      className="actived-navlink"
+      className="nav-links actived-navlink"
       href="#/"
       onClick={[Function]}
       style={Object {}}
@@ -32,6 +32,7 @@ exports[`Navbar Component Test Renders NavBar 1`] = `
     </a>
     <a
       aria-current={null}
+      className="nav-links"
       href="#/missions"
       onClick={[Function]}
     >
@@ -39,6 +40,7 @@ exports[`Navbar Component Test Renders NavBar 1`] = `
     </a>
     <a
       aria-current={null}
+      className="nav-links"
       href="#/myprofile"
       onClick={[Function]}
     >
